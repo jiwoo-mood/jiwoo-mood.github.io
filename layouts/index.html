@@ -1,0 +1,115 @@
+{{ define "main" }}
+<!-- 기존 프로필 섹션 유지 -->
+<div class="profile">
+    {{ if .Site.Params.profileMode.enabled }}
+    {{ partial "index_profile.html" . }}
+    {{ end }}
+</div>
+
+<!-- News 섹션 추가 -->
+<section class="home-section">
+    <h2>📰 News</h2>
+    {{ $news := where site.RegularPages "Section" "news" }}
+    {{ range first 3 $news }}
+    <article class="home-item">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        <p>{{ .Summary | truncate 150 }}</p>
+    </article>
+    {{ end }}
+    {{ if gt (len $news) 3 }}
+    <a href="/news/" class="more-link">More News →</a>
+    {{ end }}
+</section>
+
+<!-- Papers 섹션 추가 -->
+<section class="home-section">
+    <h2>📄 Papers</h2>
+    {{ $papers := where site.RegularPages "Section" "papers" }}
+    {{ range first 3 $papers }}
+    <article class="home-item">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        <p>{{ .Summary | truncate 150 }}</p>
+    </article>
+    {{ end }}
+    {{ if gt (len $papers) 3 }}
+    <a href="/papers/" class="more-link">More Papers →</a>
+    {{ end }}
+</section>
+
+<!-- Data 섹션 추가 -->
+<section class="home-section">
+    <h2>📊 Projects</h2>
+    {{ $data := where site.RegularPages "Section" "data" }}
+    {{ range first 3 $data }}
+    <article class="home-item">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        <p>{{ .Summary | truncate 150 }}</p>
+    </article>
+    {{ end }}
+    {{ if gt (len $data) 3 }}
+    <a href="/data/" class="more-link">More Data →</a>
+    {{ end }}
+</section>
+
+<style>
+    .home-section {
+        margin: 3rem 0;
+        padding: 2rem 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .home-section h2 {
+        margin-bottom: 1.5rem;
+        color: var(--primary);
+        font-size: 1.5rem;
+    }
+
+    .home-item {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .home-item:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .home-item h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.1rem;
+    }
+
+    .home-item h3 a {
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    .home-item time {
+        font-size: 0.9rem;
+        color: var(--secondary);
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .more-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background: var(--theme);
+        color: var(--primary);
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 500;
+        transition: background 0.3s ease;
+    }
+
+    .more-link:hover {
+        background: var(--border);
+    }
+</style>
+{{ end }}

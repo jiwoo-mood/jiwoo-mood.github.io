@@ -12,6 +12,9 @@ taxonomies:
 
 menu:
     main:
+        - name: News
+          url: news/
+          weight: 1
         - name: Books
           url: books/
           weight: 5 
@@ -21,7 +24,7 @@ menu:
         - name: Courses
           url: courses/
           weight: 3
-        - name: Data
+        - name: Projects
           url: data/
           weight: 4 
         - name: Blog
@@ -29,7 +32,7 @@ menu:
           weight: 6
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
+    description: ""
     author: Moritz-Maria von Igelfeld
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -44,7 +47,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["News","books","courses","papers","data"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -54,7 +57,7 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
+          title: Jiwoo Choi
           subtitle: "I am a master student majoring in Artificial Intelligence at Yonsei University, advised by Prof. Seon Joo Kim. My research interests include Generative Models and AI watermarking against GenAI"
           imageUrl: "picture.jpeg"
           imageWidth: 160
@@ -64,10 +67,6 @@ params:
               url: papers/
             - name: Data
               url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
             - name: Tags
               url: tags/
             - name: Archive
