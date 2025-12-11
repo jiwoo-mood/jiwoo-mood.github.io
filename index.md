@@ -8,7 +8,6 @@ title: Home
 		<h1 id="intro-title">Hi, I'm Kevin Li</h1>
 	</div>
 	<div class="intro-left">
-	<div class="intro-left">
 		I am a third year Ph.D. student at CMU's Machine Learning Department, where I am fortunate enough to be co-advised by both <a href="https://twitter.com/_albertgu">Prof. Albert Gu</a> and <a href="https://zicokolter.com">Prof. Zico Kolter</a> and supported by the NSF Graduate Research Fellowship. Previously, I was a Computer Science and Biomedical Engineering undergrad at Georgia Tech, where I had a wonderful time advised by <a href="http://www.cc.gatech.edu/~dchau/">Prof. Polo Chau</a>.
 	</div>
 	<div style="height: 1rem"></div>
@@ -46,6 +45,24 @@ title: Home
 <hr class="l-middle home-hr">
 
 <h2 class="feature-title l-middle">
+	<a href="/cv#academic-research-experience">Research Experience</a>
+</h2>
+{% for experience in site.data.experiences %}
+{% if experience.type == 'academic' %}
+{% include cv/experience.html experience=experience %}
+{% endif %}
+{% endfor %}
+
+[gt]: http://www.gatech.edu "Georgia Tech"
+[cse]: http://cse.gatech.edu "Georgia Tech Computational Science and Engineering"
+[coc]: http://www.cc.gatech.edu "Georgia Tech College of Computing"
+
+[cv]: {{ site.url }}/cv
+[polo]: http://www.cc.gatech.edu/~dchau/ "Polo Chau"
+
+<hr class="l-middle home-hr">
+
+<h2 class="feature-title l-middle">
 	Featured <a href="/cv#publications">Research Publications</a>
 </h2>
 <div class="cover-wrapper l-screen">
@@ -65,21 +82,3 @@ title: Home
 {% for award in site.data.awards %}
 {% include cv/award.html award=award %}
 {% endfor %}
-
-<hr class="l-middle home-hr">
-
-<h2 class="feature-title l-middle">
-	<a href="/cv#academic-research-experience">Research Experience</a>
-</h2>
-{% for experience in site.data.experiences %}
-{% if experience.type == 'academic' %}
-{% include cv/experience.html experience=experience %}
-{% endif %}
-{% endfor %}
-
-[gt]: http://www.gatech.edu "Georgia Tech"
-[cse]: http://cse.gatech.edu "Georgia Tech Computational Science and Engineering"
-[coc]: http://www.cc.gatech.edu "Georgia Tech College of Computing"
-
-[cv]: {{ site.url }}/cv
-[polo]: http://www.cc.gatech.edu/~dchau/ "Polo Chau"
