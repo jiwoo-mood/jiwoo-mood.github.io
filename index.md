@@ -5,7 +5,7 @@ title: Home
 
 <div id ="intro-wrapper" class="l-middle">
 	<div id="intro-title-wrapper" class="intro-left">
-		<h1 id="intro-title">Hi, I'm Kevin Li</h1>
+		<h1 id="intro-title">Hi, I'm Jiwoo Choi</h1>
 	</div>
 	<div class="intro-left">
 	<div class="intro-left">
@@ -46,7 +46,8 @@ title: Home
 <hr class="l-middle home-hr">
 
 <h2 class="feature-title l-middle">
-	<a href="/cv#academic-research-experience">Research Experience</a>
+	<!-- <a href="/cv#academic-research-experience">Research Experience</a> -->
+	Research Experience
 </h2>
 {% for experience in site.data.experiences %}
 {% if experience.type == 'academic' %}

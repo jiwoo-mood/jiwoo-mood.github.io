@@ -38,41 +38,33 @@
   institution-url: https://gatech.com
   type: industry
 
-- institution: Carnegie Mellon University
-  location: "Pittsburgh, PA"
+- institution: Yonsei University
+  location: "Seoul, Korea"
   position: Graduate Research Assistant
-  # group: Polo Club of Data Science
-  year: "Oct. 2023 - Current"
+  group: Computational Intelligence & Photography Lab
+  year: "Sept. 2024 - Current"
   mentors: 
-    - Albert Gu and Zico Kolter
+    - Seon Joo Kim
   advisor: true
   # description: "Conducted research in machine learning, human-computer interaction, and the intersection of the two."
-  # institution-url: http://gatech.edu
-  # group-url: poloclub.github.io
+  institution-url: https://www.yonsei.ac.kr/sites/en_sc/index.do
+  group-url: https://www.ciplab.kr/home
   type: academic
 
-- institution: Georgia Institute of Technology
-  location: "Atlanta, GA"
-  position: Undergraduate Research Assistant
-  group: Polo Club of Data Science
-  year: "Aug. 2020 - May 2023"
-  mentors: 
-    - Duen Horng (Polo) Chau
-  advisor: true
-  description: "Conducted research in machine learning, human-computer interaction, and the intersection of the two."
-  institution-url: http://gatech.edu
-  group-url: poloclub.github.io
+- institution: Kist (Korea Institute of Science and Technology)
+  location: "Seoul, Korea"
+  position: Research Intern
+  group: Center for Artificial Intelligence research
+  year: "Sept. 2023 — Dec. 2023"
+  description: "Participated in projects to train multi view 3D human pose estimation by inputting 2D human skeleton"
+  institution-url: https://www.kist.re.kr/eng/index.do
   type: academic
 
-- institution: Georgia Institute of Technology
-  location: "Atlanta, GA"
-  position: Student Researcher
-  group: Laboratory for Intelligent Decision and Autonomous Robots (LIDAR) Lab
-  year: "Jan. 2019 — Dec. 2019"
-  mentors: 
-    - Ye Zhao
-  advisor: true
-  description: "Worked on controlling cost-effective, physical model of the human hand."
-  institution-url: http://gatech.edu
-  group-url: https://lab-idar.gatech.edu
+- institution: Kist (Korea Institute of Science and Technology)
+  location: "Seoul, Korea"
+  position: Research Intern
+  group: Center for Artificial Intelligence research
+  year: "Dec. 2022 — Feb. 2023"
+  description: "Worked on training and predicting transformer models for pose estimation"
+  institution-url: https://www.kist.re.kr/eng/index.do
   type: academic
