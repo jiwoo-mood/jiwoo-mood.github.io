@@ -1,6 +1,6 @@
-title: Kevin Li
-tagline: Kevin Li
-url: http://kevinyli.com
+title: Jiwoo Choi
+tagline: Jiwoo Choi
+url: http://jiwoo-mood.github.io
 baseurl: ""
 # gems: [jekyll-paginate]
 # paginate: 5
@@ -14,9 +14,9 @@ sass:
   style: compressed
 
 author:
-  name: Kevin Li
-  url: http://kevinyli.com
-  email: kevin.li5505@gmail.com
+  name: Jiwoo Choi
+  url: http://jiwoo-mood.github.io
+  email: jiw55@yonsei.ac.kr
 
 markdown: kramdown
 highlighter: rouge
