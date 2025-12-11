@@ -1,9 +1,7 @@
 {
-    "name": "kevinyli",
-    "short_name": "kevinyli",
-    "icons": [
-        
-    ],
+    "name": "Jiwoo Choi",
+    "short_name": "Jiwoo Choi",
+    "icons": [],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"

@@ -1,19 +1,19 @@
 {
-  "name": "kevin.github.io",
+  "name": "jiwoo-mood.github.io",
   "version": "1.0.0",
-  "description": "Kevin's website.",
+  "description": "Jiwoo Choi's website.",
   "main": "index.js",
   "scripts": {
     "start": "bundle exec jekyll serve --livereload"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinli573/kevin.github.io.git"
+    "url": "git+https://github.com/jiwoo-mood/jiwoo-mood.github.io.git"
   },
-  "author": "Kevin Li",
+  "author": "Jiwoo Choi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevinli573/kevin.github.io/issues"
+    "url": "https://github.com/jiwoo-mood/jiwoo-mood.github.io/issues"
   },
-  "homepage": "https://github.com/kevinli573/kevin.github.io#readme"
+  "homepage": "https://github.com/jiwoo-mood/jiwoo-mood.github.io#readme"
 }

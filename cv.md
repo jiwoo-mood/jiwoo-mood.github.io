@@ -6,7 +6,7 @@ jsarr:
 - js/scripts.js
 ---
 
-<h1 id="cv-title"><a href="{{ site.url }}">Kevin Li</a></h1>
+<h1 id="cv-title"><a href="{{ site.url }}">Jiwoo Choi</a></h1>
 
 <!-- <div id="cv-toc">
 <ul class="cv-description">
